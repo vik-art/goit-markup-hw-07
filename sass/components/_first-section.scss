@@ -1,0 +1,64 @@
+.visually-hidden {
+    @extend %hidden;
+  }
+
+.heading-type {
+    @extend %header;
+    color: $primary-text-color;
+
+    text-transform: uppercase;
+}
+.propose {
+    margin-bottom: 50px;
+}
+.propose-items {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.propose-items li+li {
+    margin-left: 29px;
+}
+.propose-items>li {
+    width: 270px;
+}
+.propose-icon {
+    width: 270px;
+    height: 120px;
+    padding: 30px 100px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    background-color: $secondary-bg-color;
+}
+.about-us {
+    border-bottom:  1px solid #ECECEC;
+    padding-bottom: 94px;
+}
+.first-section {
+    @extend %container;
+    padding-top: 94px;
+}
+.goals img, .comand img {
+    display: block;
+}
+
+.white {
+    display: inline-block;
+    min-width: 370px;
+    padding: 28px 15px;
+    text-align: center;
+
+    color: $white-text-color;
+    background: rgba(47, 48, 58, 0.8);
+}
+.section-heading {
+    @extend %font-type;
+    color: $primary-text-color;
+    text-align: center;
+}
+.secion-text {
+    @extend %text-font;
+    margin-top: 10px;
+    color: $secondary-text-color;
+}

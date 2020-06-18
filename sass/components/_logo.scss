@@ -1,0 +1,23 @@
+.logo {
+    @extend %link;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 86px;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    color: $primary-text-color;
+        span {
+            color: $accent-text-color;
+    }
+}
+.smaller-type {
+    font-size: 22px;
+    color: $white-text-color;
+    margin-right: 0;
+    padding: 0;
+}
