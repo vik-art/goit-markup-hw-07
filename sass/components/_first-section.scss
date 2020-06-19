@@ -12,6 +12,7 @@
     margin-bottom: 50px;
 }
 .propose-items {
+    @extend %list;
     display: flex;
     list-style-type: none;
     padding-left: 0;
@@ -31,13 +32,21 @@
 
     background-color: $secondary-bg-color;
 }
-.about-us {
-    border-bottom:  1px solid #ECECEC;
-    padding-bottom: 94px;
-}
 .first-section {
     @extend %container;
     padding-top: 94px;
+    padding-bottom: 94px;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 1200px;
+        background-color: $secondary-bg-color;
+
+        position: absolute;
+        bottom: 0;
+    }
 }
 .goals img, .comand img {
     display: block;
